@@ -4,8 +4,9 @@
   "description": "Implementaçao do https://www.tabnews.com.br para estudo pessoal do https://curso.dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "MIT",
