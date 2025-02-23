@@ -3,13 +3,10 @@ import React, { useState } from 'react';
 const Home = () => {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
-
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const lowerName = name.toLowerCase().trim();
     const validNames = ['iasmym', 'iasmym santos', 'iasmym santos silveira'];
-
     if (!name) {
       setMessage('Digite um nome para descobrir se é vc! 😊');
     } else if (validNames.includes(lowerName)) {
@@ -19,7 +16,6 @@ const Home = () => {
     } else {
       setMessage('Sinto muito, não é você... 😔');
     }
-
     setName('');
   };
 
